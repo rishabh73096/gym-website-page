@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(img/bg.jpg);
+        height: 3px;
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 37px;
+        top: 27px;
+    }
+
+    .left img {
+        width: 60px;
+        cursor: pointer;
+        filter: invert(100%);
+        margin: 5px;
+    }
+
+    .left div {
+        line-height: 25px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .mid {
+        display: block;
+        width: 46%;
+        margin: 18px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 23px;
+        top: 34px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 21px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+
+    }
+
+    .btn {
+        margin: px 9px;
+        background-color: black;
+        color: white;
+        padding: 3px 14px;
+        border-radius: 10px;
+        border: 2px solid rgb(150, 46, 46);
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(34, 31, 31);
+    }
+
+    .container {
+        border: 2px solid rgb(108, 98, 98);
+        margin: 106px 80px;
+        padding: 19px;
+        width: 31%;
+        border-radius: 38px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 365px;
+        padding: -3px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 16px;
+        border-radius: 65px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+        width: 433px;
+        font-size: 24px;
+    }
+
+    .container button {
+        display: block;
+        width: 364px;
+        margin: 19px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div> Rishu fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home </a></li>
+                <li> <a href="#"> About us </a></li>
+                <li> <a href="#"> Fitness calculator</a></li>
+                <li> <a href="#"> Contact Us </a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn"> Call About us </button>
+            <button class="btn"> email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of the delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your email id">
+            </div>
+            <button class="btn"> Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
